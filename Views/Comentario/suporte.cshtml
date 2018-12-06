@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Suporte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="/css/suporte.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="banner" src="/imagens/banner.png" width="100%" height="800px" alt="banner">
+        <div class="barra">
+            <ul class="links">
+                <li>
+                    <a href="/Usuario/Index">Home</a>
+                </li>
+                <li>
+                    <a href="/Usuario/Planos">Planos</a>
+                </li>
+                <li>
+                    <a href="/Usuario/SobreNos">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="/Usuario/Login">Login/Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <center>
+            <div class="titulo">
+                <h2>saq</h2>
+            </div>
+            <!-- copiar ate aqui em todas   -->
+            <div class="subtitulo2">
+                <h3>Envie uma mensagem em caso de dúvida</h3>
+                <input class="input1" type="text" placeholder="Nome">
+                <br>
+                <input class="input1" type="email" placeholder="E-mail">
+                <br>
+                <input class="input1" type="tel" placeholder="Telefone">
+                <br>
+                <textarea class="input2" placeholder="mensagem"></textarea>
+                <br>
+                <button class="input3">Enviar</button>
+            </div>
+            <div class="titulo2">
+                <h2>faq</h2>
+                <ul class="faq">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, doloribus eveniet, aperiam
+                        voluptatum id
+                        sed et recusandae dignissimos ipsam totam quia aliquam?</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aperiam quam fugiat maxime
+                        praesentium, aut
+                        fuga cumque id debitis fugit deleniti amet laboriosam?</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolorum, ad magnam neque illum
+                        nisi
+                        adipisci
+                        sit laudantium iste, dolore?</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non perferendis itaque maiores quos?
+                        Soluta quod,
+                        recusandae adipisci neque accusantium placeat?</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem similique
+                        delectus
+                        nam molestias
+                        laboriosam eius ullam harum voluptate atque?</li>
+                </ul>
+            </div>
+            <div class="titulo3">
+                <form action="/Comentario/Suporte" method="POST">
+                <h2>Comentários</h2>
+                <input class="areaComentario" type="text" name="textoComentario" placeholder="Escreva um comentário"  required="true">
+                <br>
+                <button type="submit" name="CadastrarComentario">Cadastrar Comentario</button>
+            </div>
+            @foreach (var item in ViewBag.lista)
+            {
+                <tr>
+                    <td>
+                        @item.NomeComentario<br>
+                    </td>
+                    <td>
+                        @item.TextoComentario<br>
+                    </td>
+                    <td>
+                        <a href="/Comentario/Aprovar?id=@item.ID">Aprovar</a>
+                    </td>
+                </tr>
+            }
+            </form>
+        </center>
+    </main>
+
+    <footer>
+        <div class="barra-footer">
+            <ul>
+                <li>Carfel@gmail.com</li>
+                <li>Facebook/Carfel</li>
+                <li>Instragram/Carfel</li>
+                <li>2953-1148/98826-1272</li>
+            </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="banner" src="/imagens/banner.png" width="100%" height="800px" alt="banner">
+        <div class="barra">
+            <ul class="links">
+                <li>
+                    <a href="/Usuario/Index">Home</a>
+                </li>
+                <li>
+                    <a href="/Usuario/Planos">Planos</a>
+                </li>
+                <li>
+                    <a href="/Usuario/SobreNos">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="/Comentario/Suporte">Suporte</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <center>
+            <form action="/Usuario/Cadastro" method="POST">
+            <div class="cadastro">
+                <h2>Cadastro</h2>
+                <input class="nomeCadastro" type="text" name="nome" placeholder="nome" required="true">
+                <input class="emailCadastro" type="email" name="email" placeholder="email" required="true">
+                <input class="senhaCadastro" type="password" name="senha" placeholder="senha" required="true">
+                <button name="cadastrar" type="submit" class="cadastrar">Cadastrar</button>
+            </div>
+
+            <h3 class="areaLogin">Acessar área de login</h3>
+            <a href="/Usuario/Login">Login</a>
+            </form>
+        </center>
+    </main>
+
+    <footer>
+        <div class="barra-footer">
+            <ul>
+                <li>Carfel@gmail.com</li>
+                <li>Facebook/Carfel</li>
+                <li>Instragram/Carfel</li>
+                <li>2953-1148/98826-1272</li>
+            </ul>
+    </footer>
+</body>
+</html>
