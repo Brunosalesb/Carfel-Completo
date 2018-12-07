@@ -7,7 +7,6 @@ namespace Carfel_Completo.Models {
         public DateTime DataComentario { get; set; }
         public string TextoComentario { get; set; }
         public bool ComentarioAprovado { get; set; }
-
         public ComentarioModel (string textoComentario, string nomeComentario, DateTime dataComentario, bool comentarioAprovado) //cadastro comentario
         {
             this.TextoComentario = textoComentario;
@@ -15,7 +14,6 @@ namespace Carfel_Completo.Models {
             this.DataComentario = dataComentario;
             this.ComentarioAprovado = comentarioAprovado;
         }
-
         public ComentarioModel (int id, string textoComentario, string nomeComentario, DateTime dataComentario, bool comentarioAprovado) {
             this.ID = id;
             this.TextoComentario = textoComentario;

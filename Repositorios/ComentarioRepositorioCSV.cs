@@ -18,7 +18,6 @@ namespace Carfel_Completo_master.Repositorios {
             }
             return comentario;
         }
-
         public List<ComentarioModel> ListarCSV (string usuarioLogado) {
             List<ComentarioModel> lsComentarios = new List<ComentarioModel> ();
 
@@ -45,7 +44,6 @@ namespace Carfel_Completo_master.Repositorios {
             }
             return lsComentarios;
         }
-
         public void Aprovar (int id) {
             string[] linhas = File.ReadAllLines ("comentarios.csv");
 
@@ -57,6 +55,22 @@ namespace Carfel_Completo_master.Repositorios {
                     break;
                 }
             }
+            File.WriteAllLines("comentarios.csv",linhas);
+        }
+        public void Rejeitar(int id){
+            string[] linhas = File.ReadAllLines("comentarios.csv");
+
+            for (int i = 0; i < linhas.Length; i++)
+            {
+                string[] dadosDaLinha = linhas[i].Split(";");
+
+                if (id.ToString() == dadosDaLinha[0])
+                {
+                    linhas[i] = "";
+                    break;
+                }
+            }
+
             File.WriteAllLines("comentarios.csv",linhas);
         }
     }

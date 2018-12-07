@@ -75,21 +75,25 @@
             <div class="titulo3">
                 <form action="/Comentario/Suporte" method="POST">
                 <h2>Comentários</h2>
-                <input class="areaComentario" type="text" name="textoComentario" placeholder="Escreva um comentário"  required="true">
+                <input class="areaComentario" type="text" name="textoComentario" placeholder="Deixe seu comentário">
                 <br>
-                <button type="submit" name="CadastrarComentario">Cadastrar Comentario</button>
+                <button class="botaoComentario" type="submit" name="CadastrarComentario">Cadastrar Comentario</button>
             </div>
             @foreach (var item in ViewBag.lista)
             {
                 <tr>
                     <td>
-                        @item.NomeComentario<br>
+                        @item.NomeComentario
+                    </td>
+                    <td>
+                        @item.DataComentario<br>
                     </td>
                     <td>
                         @item.TextoComentario<br>
                     </td>
                     <td>
-                        <a href="/Comentario/Aprovar?id=@item.ID">Aprovar</a>
+                        <a href="/Comentario/Aprovar?id=@item.ID">Aprovar</a> 
+                        <a href="/Comentario/Rejeitar?id=@item.ID">Rejeitar</a><br><br><br>
                     </td>
                 </tr>
             }

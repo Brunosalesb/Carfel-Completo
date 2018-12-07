@@ -208,3 +208,31 @@ C:\Users\51418943800\Desktop\Carfel-Completo\Carfel-Completo-master\bin\Debug\ne
 C:\Users\51418943800\Desktop\Carfel-Completo\Carfel-Completo-master\bin\Debug\netcoreapp2.1\Projeto Carfel Web.Views.pdb
 C:\Users\51418943800\Desktop\Carfel-Completo\Carfel-Completo-master\obj\Debug\netcoreapp2.1\Projeto Carfel Web.Views.pdb
 C:\Users\51418943800\Desktop\Carfel-Completo\Carfel-Completo-master\obj\Debug\netcoreapp2.1\Projeto Carfel Web.csproj.CopyComplete
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.deps.json
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.runtimeconfig.json
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.runtimeconfig.dev.json
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.dll
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.pdb
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.Views.dll
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\bin\Debug\netcoreapp2.1\Projeto Carfel Web.Views.pdb
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.csprojAssemblyReference.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.csproj.CoreCompileInputs.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.RazorAssemblyInfo.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.RazorAssemblyInfo.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.AssemblyInfoInputs.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.AssemblyInfo.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.TagHelpers.input.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.TagHelpers.output.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.RazorCoreGenerate.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Razor\Views\Comentario\suporte.g.cshtml.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\cadastro.g.cshtml.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\index.g.cshtml.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\login.g.cshtml.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\planos.g.cshtml.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\sobreNos.g.cshtml.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.RazorTargetAssemblyInfo.cache
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.RazorTargetAssemblyInfo.cs
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.Views.pdb
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.dll
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.pdb
+C:\Users\Regis\Desktop\Senai\Carfel-Completo\obj\Debug\netcoreapp2.1\Projeto Carfel Web.csproj.CopyComplete

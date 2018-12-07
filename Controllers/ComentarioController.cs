@@ -35,7 +35,6 @@ namespace Carfel_Completo.Controllers {
 
             ComentarioRepositorio.CadastrarComentario (comentarioModel);
             return View ();
-
         }
 
         [HttpGet]
@@ -44,6 +43,15 @@ namespace Carfel_Completo.Controllers {
             ComentarioRepositorioCSV comentario = new ComentarioRepositorioCSV();
             comentario.Aprovar(id);
             TempData["Mensagem"] = "Comentario rejeitado";
+            return RedirectToAction("Suporte","Comentario");
+        }
+
+        [HttpGet]
+        public IActionResult Rejeitar(int id){
+            ComentarioRepositorio.Rejeitar(id);
+
+            ViewBag.Mensagem = "Comentario Rejeitado";
+
             return RedirectToAction("Suporte","Comentario");
         }
     }

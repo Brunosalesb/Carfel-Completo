@@ -8,6 +8,6 @@ namespace Carfel_Completo_master.Interfaces
         ComentarioModel CadastrarComentario(ComentarioModel comentario);
          List<ComentarioModel> ListarCSV(string usuarioLogado);
         void Aprovar(int id);
-
+        void Rejeitar(int id);
     }
 }

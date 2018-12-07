@@ -64,5 +64,26 @@ p{
     text-align: center;
 }
 .barra-footer{
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.cadastrar{
+    margin: 5px 0 50px;
+    font-size: 14px;
+    color: #050505;
+    padding: 5px 20px;
+    background-color: lightgray;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+     box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.4),
+        0px 1px 0px rgba(255,255,255,0.3);
+}
+.chamaLogin{
+    font-size: 40px;
+    padding-top: 50px;
 }
