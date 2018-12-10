@@ -69,16 +69,16 @@ p{
     font-size: 34px;
 }
 .quadrado{
-    width: 300px;
+    width: 500px;
     height: 230px;
     background-color: lightblue;
     border: 1px solid black;
 }
 .quadrado h2{
-    padding: 75px;
+    padding: 92px;
 }
 .desc{
-    width: 300px;
+    width: 500px;
     height: auto;
     background-color: white;
     border: 1px solid black;
@@ -88,16 +88,16 @@ p{
 }
 .quadrado2{
     margin-top: 100px;
-    width: 300px;
+    width: 500px;
     height: 230px;
     background-color: lightblue;
     border: 1px solid black;
 }
 .quadrado2 h2{
-    padding: 75px;
+    padding: 94px;
 }
 .desc2{
-    width: 300px;
+    width: 500px;
     height: auto;
     background-color: white;
     border: 1px solid black;
@@ -107,19 +107,20 @@ p{
 }
 .quadrado3{
     margin-top: 100px;
-    width: 300px;
+    width: 500px;
     height: 230px;
     background-color: lightblue;
     border: 1px solid black;
 }
 .quadrado3 h2{
-    padding: 75px;
+    padding: 94px;
 }
 .desc3{
-    width: 300px;
+    width: 500px;
     height: auto;
     background-color: white;
     border: 1px solid black;
+    margin: 0 0 50px;
 }
 .desc3 p{
     padding: 59px;
