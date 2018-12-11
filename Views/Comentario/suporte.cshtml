@@ -78,7 +78,10 @@
                 <input class="areaComentario" type="text" name="textoComentario" placeholder="Deixe seu comentário" required="true">
                 <br>
                 <button class="botaoComentario" type="submit" name="CadastrarComentario">Cadastrar Comentario</button>
-            </div>
+            </div>   
+ 
+        <table border="1" width="60%">
+
             @foreach (var item in ViewBag.lista)
             {
                 <tr>
@@ -92,11 +95,16 @@
                         @item.TextoComentario<br>
                     </td>
                     <td>
+                        @if (item.ComentarioAprovado == false)
+                        {   
                         <a href="/Comentario/Aprovar?id=@item.ID">Aprovar</a> 
-                        <a href="/Comentario/Rejeitar?id=@item.ID">Rejeitar</a><br><br><br>
+                        <a href="/Comentario/Rejeitar?id=@item.ID">Rejeitar</a>
+                        }
+                        <br><br>
                     </td>
                 </tr>
             }
+        </table>
             </form>
         </center>
     </main>

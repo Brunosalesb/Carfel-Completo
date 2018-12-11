@@ -34,6 +34,10 @@ namespace Carfel_Completo.Controllers {
             ViewBag.Mensagem = "Comentario Enviado";
 
             ComentarioRepositorio.CadastrarComentario (comentarioModel);
+
+            List<ComentarioModel> lsComentarios = ComentarioRepositorio.ListarCSV(HttpContext.Session.GetString ("nomeLogado"));
+
+            ViewBag.lista = lsComentarios;
             return View ();
         }
 

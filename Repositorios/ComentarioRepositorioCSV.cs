@@ -23,9 +23,10 @@ namespace Carfel_Completo_master.Repositorios {
 
             string[] linhas = File.ReadAllLines ("comentarios.csv");
 
-            foreach (string linha in linhas) {
-                string[] dadosDaLinha = linha.Split (";");
-                if (string.IsNullOrEmpty (linha)) {
+                for (int i = linhas.Length - 1; i >= 0; i--)
+                {
+                string[] dadosDaLinha = linhas[i].Split (";");
+                if (string.IsNullOrEmpty (linhas[i])) {
                     continue;
                 }
                 if (usuarioLogado != "Administrador" && bool.Parse (dadosDaLinha[4]) == false) {
