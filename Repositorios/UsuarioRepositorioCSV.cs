@@ -5,6 +5,8 @@ using Projeto_Carfel_Web.Models;
 
 namespace Projeto_Carfel_Web.Repositorios {
     public class UsuarioRepositorioCSV : IUsuario {
+
+        #region Cadastrar usuario
         public UsuarioModel Cadastrar (UsuarioModel usuario) {
             if (File.Exists ("usuarios.csv")) {
                 usuario.ID = System.IO.File.ReadAllLines ("usuarios.csv").Length + 1;
@@ -12,12 +14,9 @@ namespace Projeto_Carfel_Web.Repositorios {
                 usuario.ID = 1;
             }
 
-            if (usuario.Nome == "Administrador" &&  usuario.Email == "admin@carfel.com" && usuario.Senha == "Admin" )
-            {
-                usuario.Administrador = true;    
-            }
-            else
-            {
+            if (usuario.Nome == "Administrador" && usuario.Email == "admin@carfel.com" && usuario.Senha == "Admin") {
+                usuario.Administrador = true;
+            } else {
                 usuario.Administrador = false;
             }
 
@@ -26,51 +25,52 @@ namespace Projeto_Carfel_Web.Repositorios {
             }
             return usuario;
         }
-        private List<UsuarioModel> CarregarDoCSV(){ 
-            List<UsuarioModel> lsUsuarios = new List<UsuarioModel>();
+        #endregion
+
+        #region carrega do csv
+        private List<UsuarioModel> CarregarDoCSV () {
+            List<UsuarioModel> lsUsuarios = new List<UsuarioModel> ();
 
             //abre stream de leitura de arquivo
-            string[] linhas = File.ReadAllLines("usuarios.csv");
+            string[] linhas = File.ReadAllLines ("usuarios.csv");
 
             //le cada registro no CSV
-            foreach (string linha in linhas)
-            {
+            foreach (string linha in linhas) {
                 //verifica se a linha esta vazia
-                if (string.IsNullOrEmpty(linha))
-                {
-                    continue;//pula para o proximo registro do laço
+                if (string.IsNullOrEmpty (linha)) {
+                    continue; //pula para o proximo registro do laço
                 }
 
                 //separa dados da linha
-                string[] dadosDaLinha = linha.Split(";");
+                string[] dadosDaLinha = linha.Split (";");
 
                 //cria os objetos com os dados da linha do CSV
-                UsuarioModel usuario = new UsuarioModel
-                (
-                    id: int.Parse(dadosDaLinha[0]),
+                UsuarioModel usuario = new UsuarioModel (
+                    id: int.Parse (dadosDaLinha[0]),
                     nome: dadosDaLinha[1],
                     email: dadosDaLinha[2],
                     senha: dadosDaLinha[3]
                 );
 
                 //adiciona usuario na lista
-                lsUsuarios.Add(usuario);
+                lsUsuarios.Add (usuario);
             }
             return lsUsuarios;
         }
-        public UsuarioModel BuscarPorEmailESenha(string email, string senha)
-        {
-            List<UsuarioModel> usuariosCadastrados = CarregarDoCSV();
+        #endregion
 
-            foreach (UsuarioModel usuario in usuariosCadastrados)
-            {
-                if (usuario.Email == email && usuario.Senha == senha)
-                {
+        #region Busca por email e senha
+        public UsuarioModel BuscarPorEmailESenha (string email, string senha) {
+            List<UsuarioModel> usuariosCadastrados = CarregarDoCSV ();
+
+            foreach (UsuarioModel usuario in usuariosCadastrados) {
+                if (usuario.Email == email && usuario.Senha == senha) {
                     return usuario;
                 }
             }
             return null;
         }
+        #endregion
 
-        }
     }
+}

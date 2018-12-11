@@ -69,16 +69,17 @@ p{
     font-size: 34px;
 }
 .quadrado{
-    width: 500px;
+    width: 35%;
     height: 230px;
     background-color: lightblue;
     border: 1px solid black;
 }
 .quadrado h2{
     padding: 92px;
+    width: auto;
 }
 .desc{
-    width: 500px;
+    width: 35%;
     height: auto;
     background-color: white;
     border: 1px solid black;
@@ -88,7 +89,7 @@ p{
 }
 .quadrado2{
     margin-top: 100px;
-    width: 500px;
+    width: 35%;
     height: 230px;
     background-color: lightblue;
     border: 1px solid black;
@@ -97,7 +98,7 @@ p{
     padding: 94px;
 }
 .desc2{
-    width: 500px;
+    width: 35%;
     height: auto;
     background-color: white;
     border: 1px solid black;
@@ -107,7 +108,7 @@ p{
 }
 .quadrado3{
     margin-top: 100px;
-    width: 500px;
+    width: 35%;
     height: 230px;
     background-color: lightblue;
     border: 1px solid black;
@@ -116,7 +117,7 @@ p{
     padding: 94px;
 }
 .desc3{
-    width: 500px;
+    width: 35%;
     height: auto;
     background-color: white;
     border: 1px solid black;

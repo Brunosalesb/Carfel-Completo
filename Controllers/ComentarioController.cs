@@ -15,6 +15,7 @@ namespace Carfel_Completo.Controllers {
             ComentarioRepositorio = new ComentarioRepositorioCSV();
         }
 
+        #region Comentario
         [HttpGet]
         public IActionResult Suporte(){
             List<ComentarioModel> lsComentarios = ComentarioRepositorio.ListarCSV(HttpContext.Session.GetString ("nomeLogado"));
@@ -40,7 +41,9 @@ namespace Carfel_Completo.Controllers {
             ViewBag.lista = lsComentarios;
             return View ();
         }
+        #endregion
 
+        #region Aprovar comentario
         [HttpGet]
         public IActionResult Aprovar(int id)
         {
@@ -49,7 +52,9 @@ namespace Carfel_Completo.Controllers {
             TempData["Mensagem"] = "Comentario rejeitado";
             return RedirectToAction("Suporte","Comentario");
         }
+        #endregion
 
+        #region Rejeitar comentario
         [HttpGet]
         public IActionResult Rejeitar(int id){
             ComentarioRepositorio.Rejeitar(id);
@@ -58,5 +63,6 @@ namespace Carfel_Completo.Controllers {
 
             return RedirectToAction("Suporte","Comentario");
         }
+            #endregion
     }
 }

@@ -20,12 +20,6 @@ namespace Projeto_Carfel_Web.Controllers {
         [HttpGet]
         public IActionResult SobreNos() => View();
         
-        [HttpGet]
-        public ActionResult Cadastro () => View();
-
-        [HttpGet]
-        public IActionResult Login() => View();
-
         #endregion
         public IUsuario UsuarioRepositorio { get; set; }
 
@@ -33,6 +27,12 @@ namespace Projeto_Carfel_Web.Controllers {
         {
             UsuarioRepositorio = new UsuarioRepositorioCSV();
         }
+
+        #region Cadastro Usuario
+            
+
+        [HttpGet]
+        public ActionResult Cadastro () => View();
         
         [HttpPost]
         public ActionResult Cadastro (IFormCollection form) {
@@ -47,7 +47,12 @@ namespace Projeto_Carfel_Web.Controllers {
             UsuarioRepositorio.Cadastrar(usuarioModel);
             return View ();
         }
+        #endregion
         
+        #region Login  
+        [HttpGet]
+        public IActionResult Login() => View();
+
         [HttpPost]
         public IActionResult Login(IFormCollection form){
             UsuarioModel usuario = new UsuarioModel(email: form["email"],senha: form["senha"]);
@@ -69,7 +74,6 @@ namespace Projeto_Carfel_Web.Controllers {
             }
             return View();
         }
-
-
+        #endregion
     }
 }

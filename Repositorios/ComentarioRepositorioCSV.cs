@@ -6,6 +6,8 @@ using Carfel_Completo_master.Interfaces;
 
 namespace Carfel_Completo_master.Repositorios {
     public class ComentarioRepositorioCSV : IComentario {
+
+        #region Cadastrar comentario     
         public ComentarioModel CadastrarComentario (ComentarioModel comentario) {
             if (File.Exists ("comentarios.csv")) {
                 comentario.ID = System.IO.File.ReadAllLines ("comentarios.csv").Length + 1;
@@ -18,6 +20,9 @@ namespace Carfel_Completo_master.Repositorios {
             }
             return comentario;
         }
+        #endregion
+
+        #region Listar
         public List<ComentarioModel> ListarCSV (string usuarioLogado) {
             List<ComentarioModel> lsComentarios = new List<ComentarioModel> ();
 
@@ -45,6 +50,9 @@ namespace Carfel_Completo_master.Repositorios {
             }
             return lsComentarios;
         }
+        #endregion
+
+        #region Aprovar comentario
         public void Aprovar (int id) {
             string[] linhas = File.ReadAllLines ("comentarios.csv");
 
@@ -58,6 +66,9 @@ namespace Carfel_Completo_master.Repositorios {
             }
             File.WriteAllLines("comentarios.csv",linhas);
         }
+        #endregion
+
+        #region Rejeitar comentario
         public void Rejeitar(int id){
             string[] linhas = File.ReadAllLines("comentarios.csv");
 
@@ -71,8 +82,8 @@ namespace Carfel_Completo_master.Repositorios {
                     break;
                 }
             }
-
             File.WriteAllLines("comentarios.csv",linhas);
         }
+        #endregion
     }
 }
